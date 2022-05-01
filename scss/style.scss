@@ -1,0 +1,162 @@
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+    list-style-type: none;
+}
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; // navを中央に位置付けする
+  padding: 0 40px;
+  z-index: 10; // 重なり順
+  position: fixed;
+  background-color: #fff;
+}
+
+// 🍔メニュー
+#nav {
+  background-color: #121212;
+  position: fixed; // 画面のきまった位置に固定する
+  width: 30%;
+  top: 0;
+  left: -1000px;
+  bottom: 0;
+  padding: 60px 25px;
+  z-index: 20;
+  // opacity: 0;
+
+  // display: block; // 要素が横までいっぱいに広がり、縦に並んでいく
+  // color: white; //これいる？
+  // overflow-x: hidden; //ボックスに収まらない部分は非表示。
+  // overflow-y: auto;//ボックスに収まらない場合自動調整する。
+  // -webkit-overflow-scrolling: touch; // 要素内でスクロール いらない？
+  // opacity: 0; // いる？
+  a {
+    color: #fff;
+  }
+  ul {
+    padding: 0;
+  }
+}
+
+.nav-menu {
+  margin-bottom: 60px;
+  border-top: solid 1px #fff;
+
+  li {
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: solid 1px #fff;
+  }
+}
+.nav-sns li {
+  padding: 5px 0;
+}
+
+.hamburger-btn {
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  right: 45px;
+  position: fixed;
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 20; // ボタンが一番上にくるようにする
+  // display: block;
+  
+
+  span {
+    display: block;
+    position: absolute;
+    background-color: #333;
+    border-radius: 4px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    transition: all 0.5s;
+  }
+  span:nth-child(1) {
+    top: 4px;
+  }
+  span:nth-child(2) {
+    top: 14px;
+  }
+  span:nth-child(3) {
+    bottom: 4px;
+  }
+}
+
+// 🍔メニュークリック時 三本線をバツにする。
+.open {
+  #nav {
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s;
+  }
+  .btn-line {
+    background-color: #fff;
+  }
+  span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg); // rotate でななめに設定
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg); // rotate でななめに設定
+  }
+}
+
+
+// 🍔メニューを押下後、閉じることのできるクリックエリアを指定
+#hamburger-btn-area {
+  display: none;
+  transition: all 0.5s;
+}
+
+.open #hamburger-btn-area {
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/*-------------------------------------------
+メイン
+-------------------------------------------*/
+.top-video {
+  width: 100%;
+}
+
+//　２番目のエリア
+#secound-area {
+  .secound-title {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+  }
+  li {
+    width: 100px;
+    display: block;
+  }
+  .wrapper .swiper-container .swiper-wrapper {
+    width: 10px;
+  }
+  .swiper-slide img {
+    width: 300px;
+  }
+  
+}

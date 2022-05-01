@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sneakers</title>
+    <!-- 追加 -->
+    <meta
+      name="description"
+      content="テキストテキストテキストテキストテキストテキストテキストテキス"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="top-title">
+        <a href="#">
+          <img src="img/logo.svg" alt="site-logo" />
+        </a>
+      </h1>
+
+      <!-- 🍔メニュー -->
+      <nav id="nav">
+        <ul class="nav-menu">
+          <li><a href="#">PICK UP</a></li>
+          <li><a href="#">FEATURE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <ul class="nav-sns">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">instagram</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🍔メニューボタン　三本線を作る -->
+      <div class="hamburger-btn">
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+      </div>
+
+      <!-- 🍔メニューエリア -->
+      <div id="hamburger-btn-area"></div>
+    </header>
+
+    <main>
+      <div class="top-area">
+        <video
+          class="top-video"
+          src="img/topvideo.mp4"
+          loop
+          autoplay
+          muted
+          playsinline
+        ></video>
+      </div>
+
+      <!-- スライドエリア -->
+      <section id="secound-area">
+        <h2 class="secound-title">PICK UP</h2>
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="img/pickup1.jpg" alt="pickup1" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup2.jpg" alt="pickup2" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup3.jpg" alt="pickup3" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup4.jpg" alt="pickup4" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup5.jpg" alt="pickup5" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup6.jpg" alt="pickup6" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup7.jpg" alt="pickup7" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup8.jpg" alt="pickup8" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup9.jpg" alt="pickup9" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <div class="wrapper">
+        <h2 class="secound-title">PICK UP</h2>
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="img/pickup1.jpg" slt="pickup1" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup2.jpg" slt="pickup2" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup3.jpg" slt="pickup3" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup4.jpg" slt="pickup4" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup5.jpg" slt="pickup5" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup6.jpg" slt="pickup6" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup7.jpg" slt="pickup7" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup8.jpg" slt="pickup8" />
+            </li>
+            <li class="swiper-slide">
+              <img src="img/pickup9.jpg" slt="pickup9" />
+            </li>
+          </ul>
+        </div>
+      </div> -->
+    </main>
+  </body>
+</html>
