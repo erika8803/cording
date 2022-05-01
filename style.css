@@ -135,7 +135,7 @@ header {
   width: 100px;
   display: block;
 }
-#secound-area .wrapper .swiper-container .swiper-wrapper {
+#secound-area .swiper-container .swiper-wrapper {
   width: 10px;
 }
 #secound-area .swiper-slide img {
