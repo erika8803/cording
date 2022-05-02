@@ -31,6 +31,11 @@ header {
   position: fixed;
   background-color: #fff;
 }
+@media (max-width: 767px) {
+  header {
+    padding: 0 16px;
+  }
+}
 
 #nav {
   background-color: #121212;
@@ -135,6 +140,11 @@ header {
 -------------------------------------------*/
 .top-video {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .top-video {
+    padding-top: 100px;
+  }
 }
 
 /*-------------------------------------------

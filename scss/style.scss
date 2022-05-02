@@ -32,6 +32,10 @@ header {
   z-index: 10; // 重なり順
   position: fixed;
   background-color: #fff;
+  @include mobile {
+    padding: 0 16px;
+  }
+
 }
 
 // 🍔メニュー
@@ -147,6 +151,9 @@ header {
 -------------------------------------------*/
 .top-video {
   width: 100%;
+  @include mobile {
+    padding-top: 100px;
+  }
 }
 
 /*-------------------------------------------
