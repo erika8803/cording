@@ -202,11 +202,26 @@ contactエリア
   padding: 1rem;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  #contact .contact-area {
+    display: block;
+  }
+}
 #contact .contact-info {
   width: 45%;
 }
+@media (max-width: 767px) {
+  #contact .contact-info {
+    width: 100%;
+  }
+}
 #contact .contact-form {
   width: 50%;
+}
+@media (max-width: 767px) {
+  #contact .contact-form {
+    width: 100%;
+  }
 }
 #contact input {
   width: 90%;
