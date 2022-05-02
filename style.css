@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -6,6 +11,12 @@ a {
 
 li {
   list-style-type: none;
+}
+
+.secound-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
 }
 
 /*-------------------------------------------
@@ -126,18 +137,106 @@ header {
   width: 100%;
 }
 
-#secound-area .secound-title {
-  text-align: center;
-  font-size: 2.25rem;
-  margin-bottom: 30px;
+/*-------------------------------------------
+seconund PICKUPエリア
+-------------------------------------------*/
+#secound-area {
+  width: 100%;
+  padding-top: 6%;
 }
-#secound-area li {
-  width: 100px;
-  display: block;
-}
-#secound-area .swiper-container .swiper-wrapper {
-  width: 10px;
+#secound-area .swiper-container li {
+  padding: 0 30px;
 }
 #secound-area .swiper-slide img {
-  width: 300px;
+  width: 100%;
+}
+
+/*-------------------------------------------
+third FEATUREエリア
+-------------------------------------------*/
+#third-area {
+  padding-top: 6%;
+}
+#third-area .blog-area {
+  padding: 1% 2% 5% 2%;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#third-area .blog-content {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px 4px #ccc;
+}
+#third-area img {
+  vertical-align: top;
+  width: 100%;
+}
+#third-area .blog-card {
+  padding: 30px;
+}
+#third-area .blog-category {
+  font-size: 0.75rem;
+}
+#third-area .blog-text {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#third-area .blog-date {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+/*-------------------------------------------
+contactエリア
+-------------------------------------------*/
+#contact {
+  padding-top: 20px;
+  background-color: #000;
+  color: #fff;
+}
+#contact p {
+  padding-bottom: 1em;
+}
+#contact .contact-area {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+#contact .contact-info {
+  width: 45%;
+}
+#contact .contact-form {
+  width: 50%;
+}
+#contact input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#contact textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#contact .button input {
+  width: 50%;
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 12px 0;
+  margin: 20px 0;
+}
+
+/*-------------------------------------------
+footerエリア
+-------------------------------------------*/
+#footer {
+  padding: 1em;
+  background-color: #000;
+}
+#footer p {
+  margin: 0;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
 }

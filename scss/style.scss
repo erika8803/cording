@@ -1,4 +1,7 @@
-
+body {
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
 a {
   text-decoration: none;
   color: black;
@@ -6,6 +9,12 @@ a {
 li {
     list-style-type: none;
 }
+.secound-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+}
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -29,14 +38,7 @@ header {
   bottom: 0;
   padding: 60px 25px;
   z-index: 20;
-  // opacity: 0;
 
-  // display: block; // 要素が横までいっぱいに広がり、縦に並んでいく
-  // color: white; //これいる？
-  // overflow-x: hidden; //ボックスに収まらない部分は非表示。
-  // overflow-y: auto;//ボックスに収まらない場合自動調整する。
-  // -webkit-overflow-scrolling: touch; // 要素内でスクロール いらない？
-  // opacity: 0; // いる？
   a {
     color: #fff;
   }
@@ -141,22 +143,110 @@ header {
   width: 100%;
 }
 
-//　２番目のエリア
+/*-------------------------------------------
+seconund PICKUPエリア
+-------------------------------------------*/
 #secound-area {
-  .secound-title {
-    text-align: center;
-    font-size: 2.25rem;
-    margin-bottom: 30px;
-  }
-  li {
-    width: 100px;
-    display: block;
-  }
-  .swiper-container .swiper-wrapper {
-    width: 10px;
+  width: 100%;
+  padding-top: 6%; 
+
+  .swiper-container li {
+    padding: 0 30px;
   }
   .swiper-slide img {
-    width: 300px;
+    width: 100%;
   }
-  
+}
+
+
+/*-------------------------------------------
+third FEATUREエリア
+-------------------------------------------*/
+#third-area  {
+  padding-top: 6%;
+  .blog-area{
+    padding: 1% 2% 5% 2%; 
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .blog-content { 
+    transition: all  0.3s ease;
+    box-shadow: 0 0 8px 4px #ccc;
+  }
+  img {
+    vertical-align: top;
+    width: 100%;
+  }
+  .blog-card {
+    padding: 30px;
+  }
+  .blog-category {
+    font-size: 0.75rem;
+  }
+  .blog-text {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .blog-date {
+    font-size: 0.75rem;
+    text-align: right;
+  }
+}
+
+
+/*-------------------------------------------
+contactエリア
+-------------------------------------------*/
+#contact {
+  padding-top: 20px;
+  background-color: #000;
+  color: #fff;
+  p {
+    padding-bottom: 1em;
+  }
+  .contact-area {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  .contact-info {
+    width: 45%;
+  }
+  .contact-form {
+    width: 50%; 
+  }
+  input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .button input {
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 12px 0;
+    margin: 20px 0;
+  }
+}
+
+
+/*-------------------------------------------
+footerエリア
+-------------------------------------------*/
+#footer {
+  padding: 1em;
+  background-color: #000;
+  p {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
 }

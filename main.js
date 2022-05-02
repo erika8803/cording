@@ -35,6 +35,8 @@ $(function(){
     autoplay: {
       delay: 5000, // デフォルト値を設定
     },
+    slidesPerView: 5,
+    initialSlide: 5,
   })
 
 
