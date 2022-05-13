@@ -15,12 +15,28 @@ li {
   margin-bottom: 30px;
 }
 
-$mobile-size: 767px;
+$mobile-size: 420px;
+$tablet-middle-size: 720px;
+$tablet-large-size: 960px;
+
 @mixin mobile {
   @media (max-width: $mobile-size) {
     @content;
   }
 }
+
+@mixin tablet-middle {
+  @media (max-width: $tablet-middle-size) {
+    @content;
+  }
+}
+
+@mixin tablet-large {
+  @media (max-width: $tablet-large-size) {
+    @content;
+  }
+}
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -32,10 +48,17 @@ header {
   z-index: 10; // 重なり順
   position: fixed;
   background-color: #fff;
+  
   @include mobile {
     padding: 0 16px;
   }
+}
 
+.top-title {
+  @include mobile {
+    margin: 20px 0 0 0;
+  }
+  
 }
 
 // 🍔メニュー
@@ -82,7 +105,11 @@ header {
   transition: all 0.5s;
   z-index: 20; // ボタンが一番上にくるようにする
   // display: block;
-  
+
+  @include mobile {
+    right: 20px;
+  }
+
 
   span {
     display: block;
@@ -151,8 +178,9 @@ header {
 -------------------------------------------*/
 .top-video {
   width: 100%;
+  padding-top: 80px;
   @include mobile {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -165,12 +193,20 @@ seconund PICKUPエリア
 
   .swiper-container li {
     padding: 0 30px;
+
+    @include mobile {
+      padding: 0 10px;
+    }
+    @include tablet-middle {
+      padding: 0 10px;
+    }
+
   }
+
   .swiper-slide img {
     width: 100%;
   }
 }
-
 
 /*-------------------------------------------
 third FEATUREエリア

@@ -31,9 +31,15 @@ header {
   position: fixed;
   background-color: #fff;
 }
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   header {
     padding: 0 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .top-title {
+    margin: 20px 0 0 0;
   }
 }
 
@@ -78,6 +84,11 @@ header {
   cursor: pointer;
   transition: all 0.5s;
   z-index: 20;
+}
+@media (max-width: 420px) {
+  .hamburger-btn {
+    right: 20px;
+  }
 }
 .hamburger-btn span {
   display: block;
@@ -140,10 +151,11 @@ header {
 -------------------------------------------*/
 .top-video {
   width: 100%;
+  padding-top: 80px;
 }
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   .top-video {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -156,6 +168,16 @@ seconund PICKUPエリア
 }
 #secound-area .swiper-container li {
   padding: 0 30px;
+}
+@media (max-width: 420px) {
+  #secound-area .swiper-container li {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 720px) {
+  #secound-area .swiper-container li {
+    padding: 0 10px;
+  }
 }
 #secound-area .swiper-slide img {
   width: 100%;
@@ -212,7 +234,7 @@ contactエリア
   padding: 1rem;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   #contact .contact-area {
     display: block;
   }
@@ -220,7 +242,7 @@ contactエリア
 #contact .contact-info {
   width: 45%;
 }
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   #contact .contact-info {
     width: 100%;
   }
@@ -228,7 +250,7 @@ contactエリア
 #contact .contact-form {
   width: 50%;
 }
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   #contact .contact-form {
     width: 90%;
   }
@@ -265,3 +287,5 @@ footerエリア
   font-size: 12px;
   text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */
