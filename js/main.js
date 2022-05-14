@@ -37,10 +37,13 @@ $(function(){
     },
     slidesPerView: 5,
     initialSlide: 5,
+    breakpoints: {
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      }
+    }
   })
-
-
-
 });
 
 
